@@ -35,7 +35,7 @@ const indicatorStyles =  {
         <Row className='w-100 h-100' align='middle' justify="space-between">
           <Col lg={8} className="d-flex alig-content-center">
             <div className='mx-auto'>
-            <picture>
+            <picture  className="img-fluid">
               <source srcSet="/assets/textLogo.png" type="image/png"/>
               <img src="/assets/textLogo.png" alt="Nomu Labs" className="img-fluid" />
             </picture>
@@ -44,7 +44,7 @@ const indicatorStyles =  {
             </div>
           </Col>
           <Col lg={16} className="text-end">
-            <picture>
+            <picture  className="img-fluid">
               <source srcSet="/assets/banner.png" type="image/png"/>
               <img src="/assets/banner.png" alt="" className="img-fluid" />
             </picture>
@@ -62,7 +62,7 @@ const indicatorStyles =  {
             </div>
           </Col>
           <Col lg={12}>
-            <picture>
+            <picture  className="img-fluid">
               <source srcSet="/assets/partners.png" type="image/png"/>
               <img src="/assets/partners.png" alt="" className="img-fluid" />
             </picture>
@@ -76,7 +76,7 @@ const indicatorStyles =  {
             {/* <a href="!#"><h6 className="text-white mt-3">Saber más &gt;</h6></a> */}
           </Col>
           <Col lg={12} className="text-end">
-          <picture>
+          <picture  className="img-fluid">
             <source srcSet="/assets/services.png" type="image/png"/>
             <img src="/assets/services.png" alt="" className="img-fluid" />
           </picture>
@@ -142,7 +142,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <picture>
+                      <picture  className="img-fluid">
                         <source srcSet="/assets/nbn23.png" type="image/png"/>
                         <img src="/assets/nbn23.png" alt="" className="img-fluid logo-lg" />
                       </picture>
@@ -155,7 +155,7 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <picture>
+                    <picture  className="img-fluid">
                       <source srcSet="/assets/basket.png" type="image/png"/>
                       <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
                     </picture>
@@ -166,7 +166,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <picture>
+                      <picture  className="img-fluid">
                         <source srcSet="/assets/selas.png" type="image/png"/>
                         <img src="/assets/selas.png" alt="" className="img-fluid logo-lg" />
                       </picture>
@@ -179,7 +179,7 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <picture>
+                    <picture  className="img-fluid">
                       <source srcSet="/assets/basket.png" type="image/png"/>
                       <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
                     </picture>
@@ -190,7 +190,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <picture>
+                      <picture  className="img-fluid">
                         <source srcSet="/assets/tgd.svg" type="image/png"/>
                         <img src="/assets/tgd.svg" alt="" className="img-fluid logo-md" />
                       </picture>
@@ -204,7 +204,7 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <picture>
+                    <picture  className="img-fluid">
                       <source srcSet="/assets/basket.png" type="image/png"/>
                       <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
                     </picture>
@@ -215,7 +215,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <picture>
+                      <picture  className="img-fluid">
                         <source srcSet="/assets/amsar.svg" type="image/png"/>
                         <img src="/assets/amsar.svg" alt="" className="img-fluid logo-lg" />
                       </picture>
@@ -228,7 +228,7 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <picture>
+                    <picture  className="img-fluid">
                       <source srcSet="/assets/basket.png" type="image/png"/>
                       <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
                     </picture>

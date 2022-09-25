@@ -8,7 +8,7 @@ export default function Layout(props){
             <nav class="navbar bg-black fixed-top">
             <div class="container-fluid d-flex justify-content-space-between align-items-center">
                 <a class="navbar-brand" href="#">
-                <picture>
+                <picture  className="img-fluid">
                     <source setSrc="/assets/logo.png" type='image/png' />
                     <img src="/assets/logo.png" alt="Nomu Labs" class="d-inline-block align-text-middle logo-md"/>
                 </picture>
@@ -25,7 +25,7 @@ export default function Layout(props){
             <div className="container-fluid py-3">
                 <Row justify="space-between" align="middle">
                     <Col>
-                        <picture>
+                        <picture  className="img-fluid">
                             <source setSrc="/assets/logo.png" type='image/png' />
                             <img src="/assets/logo.png" alt="Nomu Labs" class="d-inline-block align-text-middle logo-md"/>                    
                         </picture>
