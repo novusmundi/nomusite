@@ -35,13 +35,19 @@ const indicatorStyles =  {
         <Row className='w-100 h-100' align='middle' justify="space-between">
           <Col lg={8} className="d-flex alig-content-center">
             <div className='mx-auto'>
-            <img src="/assets/textLogo.png" alt="Nomu Labs" className="img-fluid" />
+            <picture>
+              <source srcSet="/assets/textLogo.png" type="image/png"/>
+              <img src="/assets/textLogo.png" alt="Nomu Labs" className="img-fluid" />
+            </picture>
             <h2 className="mt-3 text-white">Adelantate para destacar.</h2>
             <h5 className='gradientText text-start'>Web3 Agency</h5>
             </div>
           </Col>
           <Col lg={16} className="text-end">
-            <img src="/assets/banner.png" alt="" className="img-fluid" />
+            <picture>
+              <source srcSet="/assets/banner.png" type="image/png"/>
+              <img src="/assets/banner.png" alt="" className="img-fluid" />
+            </picture>
           </Col>
         </Row>
       </div>
@@ -56,18 +62,24 @@ const indicatorStyles =  {
             </div>
           </Col>
           <Col lg={12}>
-            <img src="/assets/partners.png" alt="" className="img-fluid" />
+            <picture>
+              <source srcSet="/assets/partners.png" type="image/png"/>
+              <img src="/assets/partners.png" alt="" className="img-fluid" />
+            </picture>
           </Col>
         </Row>
       </div>
       <div className="fullScreen d-flex align-items-center justify-content-center">
-        <Row gutter={[16,16]} className="w-100" justify="center" align='middle' gutter={[16,16]}>
+        <Row gutter={[16,16]} className="w-100" justify="center" align='middle'>
           <Col lg={10}>
             <h1 className='text-white'>Prepárate para la <span className="gradientText">tercera fase de internet.</span></h1>
             {/* <a href="!#"><h6 className="text-white mt-3">Saber más &gt;</h6></a> */}
           </Col>
           <Col lg={12} className="text-end">
-          <img src="/assets/services.png" alt="" className="img-fluid" />
+          <picture>
+            <source srcSet="/assets/services.png" type="image/png"/>
+            <img src="/assets/services.png" alt="" className="img-fluid" />
+          </picture>
           </Col>
         </Row>
       </div>
@@ -130,7 +142,10 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <img src="/assets/nbn23.png" alt="" className="img-fluid logo-lg" />
+                      <picture>
+                        <source srcSet="/assets/nbn23.png" type="image/png"/>
+                        <img src="/assets/nbn23.png" alt="" className="img-fluid logo-lg" />
+                      </picture>
                       <h5 className="mt-3">Asesoramiento Web3</h5>
                       <p className="mt-3 text-black">
                         <a href="https://nbn23.com" className='gradientText'><b>NBN23</b></a> es una empresa que tiene como objetivo digitalizar el baloncesto amateur alrededor del mundo. Su solución permite que miles de jugadores puedan disfrutar y sentir el deporte que aman como si fueran auténticos profesionales. 
@@ -140,7 +155,10 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
+                    <picture>
+                      <source srcSet="/assets/basket.png" type="image/png"/>
+                      <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
+                    </picture>
 
                     </Col>
                   </Row>
@@ -148,7 +166,10 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <img src="/assets/selas.png" alt="" className="img-fluid logo-lg" />
+                      <picture>
+                        <source srcSet="/assets/selas.png" type="image/png"/>
+                        <img src="/assets/selas.png" alt="" className="img-fluid logo-lg" />
+                      </picture>
                       <h5 className="mt-3">Asesoramiento Web3 y Desarrollo</h5>
                       <p className="mt-3 text-black">
                       <span className="gradientText"><b>Selas Studio</b></span> es una compañía especializada en generación de imágenes a través de inteligencia artificial
@@ -158,7 +179,10 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
+                    <picture>
+                      <source srcSet="/assets/basket.png" type="image/png"/>
+                      <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
+                    </picture>
 
                     </Col>
                   </Row>
@@ -166,7 +190,10 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <img src="/assets/tgd.svg" alt="" className="img-fluid logo-md" />
+                      <picture>
+                        <source srcSet="/assets/tgd.svg" type="image/png"/>
+                        <img src="/assets/tgd.svg" alt="" className="img-fluid logo-md" />
+                      </picture>
                       <h5 className="mt-3">Desarrollo, Asesoramiento, Comunidad</h5>
                       <p className="mt-3 text-black">
                       <span className="gradientText"><b>TheGalleryDAO</b></span> se dedica a dar visibilidad a artistas emergentes y a crear experiencias educativas e inmersivas alrededor del mundo. 
@@ -177,7 +204,10 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
+                    <picture>
+                      <source srcSet="/assets/basket.png" type="image/png"/>
+                      <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
+                    </picture>
 
                     </Col>
                   </Row>
@@ -185,7 +215,10 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <img src="/assets/amsar.svg" alt="" className="img-fluid logo-lg" />
+                      <picture>
+                        <source srcSet="/assets/amsar.svg" type="image/png"/>
+                        <img src="/assets/amsar.svg" alt="" className="img-fluid logo-lg" />
+                      </picture>
                       <h5 className="mt-3">Desarrollo, Comunidad, Evento, Arte</h5>
                       <p className="mt-3 text-black">
                       <span className="gradientText"><b>AMSAR</b></span> fue exhibición de NFTs en realidad aumentada durante la Amsterdam Blockchain. Creamos de comunidad que expuso sus NFTs.
@@ -195,7 +228,10 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
+                    <picture>
+                      <source srcSet="/assets/basket.png" type="image/png"/>
+                      <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
+                    </picture>
 
                     </Col>
                   </Row>
