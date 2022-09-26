@@ -52,16 +52,16 @@ body{
 }
 
 .logo {
-  max-width: 50px;
+  max-width: 50px!important;
 }
 .logo-md{
-  max-width: 100px;
+  max-width: 100px!important;
 }
 .logo-min{
-  max-width: 30px;
+  max-width: 30px!important;
 }
 .logo-lg{
-  max-width: 200px;
+  max-width: 200px!important;
 }
 
 .fullScreen{
