@@ -130,7 +130,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                        <img src="/assets/nbn23.png" alt="" className="img-fluid logo-lg" />
+                        <img src="/assets/nbn23.png" alt="" className="logo-lg" />
                       <h5 className="mt-3">Asesoramiento Web3</h5>
                       <p className="mt-3 text-black">
                         <a href="https://nbn23.com" className='gradientText'><b>NBN23</b></a> es una empresa que tiene como objetivo digitalizar el baloncesto amateur alrededor del mundo. Su solución permite que miles de jugadores puedan disfrutar y sentir el deporte que aman como si fueran auténticos profesionales. 
@@ -148,7 +148,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                        <img src="/assets/selas.png" alt="" className="img-fluid logo-lg" />
+                        <img src="/assets/selas.png" alt="" className="logo-lg" />
                       <h5 className="mt-3">Asesoramiento Web3 y Desarrollo</h5>
                       <p className="mt-3 text-black">
                       <span className="gradientText"><b>Selas Studio</b></span> es una compañía especializada en generación de imágenes a través de inteligencia artificial
@@ -166,7 +166,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                        <img src="/assets/tgd.svg" alt="" className="img-fluid logo-md" />
+                        <img src="/assets/tgd.svg" alt="" className="logo-md" />
                       <h5 className="mt-3">Desarrollo, Asesoramiento, Comunidad</h5>
                       <p className="mt-3 text-black">
                       <span className="gradientText"><b>TheGalleryDAO</b></span> se dedica a dar visibilidad a artistas emergentes y a crear experiencias educativas e inmersivas alrededor del mundo. 
@@ -185,7 +185,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                        <img src="/assets/amsar.svg" alt="" className="img-fluid logo-lg" />
+                        <img src="/assets/amsar.svg" alt="" className="logo-lg" />
                       <h5 className="mt-3">Desarrollo, Comunidad, Evento, Arte</h5>
                       <p className="mt-3 text-black">
                       <span className="gradientText"><b>AMSAR</b></span> fue exhibición de NFTs en realidad aumentada durante la Amsterdam Blockchain. Creamos de comunidad que expuso sus NFTs.
