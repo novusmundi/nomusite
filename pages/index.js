@@ -31,23 +31,17 @@ const indicatorStyles =  {
         <meta name="description" content="Nomu Labs es una agencia Web3 que te acompaña de principio a fin durante tu aventura en el metaverso." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div id="header" className='container-fluid fullScreen d-flex justify-content-center align-items-center'>
-        <Row className='w-100 h-100' align='middle' justify="space-between">
+      <div id="header" className='bg-black fullScreen d-flex justify-content-center align-items-center'>
+        <Row className='container-fluid w-100 h-100' align='middle' justify="space-between">
           <Col lg={8} className="d-flex alig-content-center">
             <div className='mx-auto'>
-            <picture  className="img-fluid">
-              <source srcSet="/assets/textLogo.png" type="image/png"/>
               <img src="/assets/textLogo.png" alt="Nomu Labs" className="img-fluid" />
-            </picture>
             <h2 className="mt-3 text-white">Adelantate para destacar.</h2>
             <h5 className='gradientText text-start'>Web3 Agency</h5>
             </div>
           </Col>
           <Col lg={16} className="text-end">
-            <picture  className="img-fluid">
-              <source srcSet="/assets/banner.png" type="image/png"/>
               <img src="/assets/banner.png" alt="" className="img-fluid" />
-            </picture>
           </Col>
         </Row>
       </div>
@@ -62,10 +56,7 @@ const indicatorStyles =  {
             </div>
           </Col>
           <Col lg={12}>
-            <picture  className="img-fluid">
-              <source srcSet="/assets/partners.png" type="image/png"/>
               <img src="/assets/partners.png" alt="" className="img-fluid" />
-            </picture>
           </Col>
         </Row>
       </div>
@@ -76,10 +67,7 @@ const indicatorStyles =  {
             {/* <a href="!#"><h6 className="text-white mt-3">Saber más &gt;</h6></a> */}
           </Col>
           <Col lg={12} className="text-end">
-          <picture  className="img-fluid">
-            <source srcSet="/assets/services.png" type="image/png"/>
             <img src="/assets/services.png" alt="" className="img-fluid" />
-          </picture>
           </Col>
         </Row>
       </div>
@@ -142,10 +130,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <picture  className="img-fluid">
-                        <source srcSet="/assets/nbn23.png" type="image/png"/>
                         <img src="/assets/nbn23.png" alt="" className="img-fluid logo-lg" />
-                      </picture>
                       <h5 className="mt-3">Asesoramiento Web3</h5>
                       <p className="mt-3 text-black">
                         <a href="https://nbn23.com" className='gradientText'><b>NBN23</b></a> es una empresa que tiene como objetivo digitalizar el baloncesto amateur alrededor del mundo. Su solución permite que miles de jugadores puedan disfrutar y sentir el deporte que aman como si fueran auténticos profesionales. 
@@ -155,10 +140,7 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <picture  className="img-fluid">
-                      <source srcSet="/assets/basket.png" type="image/png"/>
                       <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
-                    </picture>
 
                     </Col>
                   </Row>
@@ -166,10 +148,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <picture  className="img-fluid">
-                        <source srcSet="/assets/selas.png" type="image/png"/>
                         <img src="/assets/selas.png" alt="" className="img-fluid logo-lg" />
-                      </picture>
                       <h5 className="mt-3">Asesoramiento Web3 y Desarrollo</h5>
                       <p className="mt-3 text-black">
                       <span className="gradientText"><b>Selas Studio</b></span> es una compañía especializada en generación de imágenes a través de inteligencia artificial
@@ -179,10 +158,7 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <picture  className="img-fluid">
-                      <source srcSet="/assets/basket.png" type="image/png"/>
                       <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
-                    </picture>
 
                     </Col>
                   </Row>
@@ -190,10 +166,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <picture  className="img-fluid">
-                        <source srcSet="/assets/tgd.svg" type="image/png"/>
                         <img src="/assets/tgd.svg" alt="" className="img-fluid logo-md" />
-                      </picture>
                       <h5 className="mt-3">Desarrollo, Asesoramiento, Comunidad</h5>
                       <p className="mt-3 text-black">
                       <span className="gradientText"><b>TheGalleryDAO</b></span> se dedica a dar visibilidad a artistas emergentes y a crear experiencias educativas e inmersivas alrededor del mundo. 
@@ -204,10 +177,7 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <picture  className="img-fluid">
-                      <source srcSet="/assets/basket.png" type="image/png"/>
                       <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
-                    </picture>
 
                     </Col>
                   </Row>
@@ -215,10 +185,7 @@ const indicatorStyles =  {
                 <div className="bg-white rounded projectSlide p-5">
                   <Row gutter={[16,16]}justify="space-between" align='middle'>
                     <Col className='text-start' lg={16}>
-                      <picture  className="img-fluid">
-                        <source srcSet="/assets/amsar.svg" type="image/png"/>
                         <img src="/assets/amsar.svg" alt="" className="img-fluid logo-lg" />
-                      </picture>
                       <h5 className="mt-3">Desarrollo, Comunidad, Evento, Arte</h5>
                       <p className="mt-3 text-black">
                       <span className="gradientText"><b>AMSAR</b></span> fue exhibición de NFTs en realidad aumentada durante la Amsterdam Blockchain. Creamos de comunidad que expuso sus NFTs.
@@ -228,10 +195,7 @@ const indicatorStyles =  {
                       </p>
                     </Col>
                     <Col className='text-end'>
-                    <picture  className="img-fluid">
-                      <source srcSet="/assets/basket.png" type="image/png"/>
                       <img src="/assets/basket.png" alt="" className="img-fluid rounded" />
-                    </picture>
 
                     </Col>
                   </Row>

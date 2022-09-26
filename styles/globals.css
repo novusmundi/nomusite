@@ -193,7 +193,7 @@ box-shadow: 5px 8px 5px grey;
   background: linear-gradient(72.44deg, #378D8C 0%, #2B3468 100%);
 }
 .gradientText{
-  background: linear-gradient(72.44deg, #378D8C 0%, #2B3468 100%);
+  background: linear-gradient(72.44deg, #378D8C 0%, #4452a2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
