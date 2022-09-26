@@ -5,10 +5,10 @@ import {Row, Col} from 'antd'
 export default function Layout(props){
     return(
         <div className='bg-dark'>
-            <nav class="navbar bg-black fixed-top">
-            <div class="container-fluid d-flex justify-content-space-between align-items-center">
-                <a class="navbar-brand" href="#">
-                    <img src="/assets/logo.png" alt="Nomu Labs" class="d-inline-block align-text-middle logo-md"/>
+            <nav className="navbar bg-black fixed-top">
+            <div className="container-fluid d-flex justify-content-space-between align-items-center">
+                <a className="navbar-brand" href="#">
+                    <img src="/assets/logo.png" alt="Nomu Labs" className="d-inline-block align-text-middle logo-md"/>
                 </a>
 
                 <a href="https://calendly.com/nomulabs/30min" className='noLink'>
@@ -21,7 +21,7 @@ export default function Layout(props){
             <div className="container-fluid py-3">
                 <Row justify="space-between" align="middle">
                     <Col>
-                        <img src="/assets/logo.png" alt="Nomu Labs" class="d-inline-block align-text-middle logo-md"/>                    
+                        <img src="/assets/logo.png" alt="Nomu Labs" className="d-inline-block align-text-middle logo-md"/>                    
                     </Col>
                     <Col>
                         <a href="mailto:info@nomulabs.com" className="noLink text-white">info@nomulabs.com</a>
