@@ -17,7 +17,7 @@ export default function Layout(props){
             </div>
             </nav>        
             {props.children}
-
+            <div className="bg-black">
             <div className="container-fluid py-3">
                 <Row justify="space-between" align="middle">
                     <Col>
@@ -55,6 +55,7 @@ export default function Layout(props){
                     </Row>                    
                     </Col>
                 </Row>
+            </div>
             </div>
     </div>
     )

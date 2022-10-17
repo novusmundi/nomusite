@@ -63,7 +63,9 @@ body{
 .logo-lg{
   max-width: 200px!important;
 }
-
+.logo-xl{
+  max-width: 50vw;
+}
 .fullScreen{
   min-height: 100vh;
   max-height: 100%;
@@ -200,7 +202,7 @@ box-shadow: 5px 8px 5px grey;
   text-fill-color: transparent;
 }
 .gradientButton{
-  background: linear-gradient(72.44deg, #378D8C 0%, #2B3468 100%);
+  background: linear-gradient(72.44deg, #49b8b6 0%, #4958ae 100%);
   color: #fff;
   border-radius: 5px;
   border: none;
@@ -208,7 +210,7 @@ box-shadow: 5px 8px 5px grey;
   transition: 0.5s;
 }
 .gradientButton:hover{
-  background: linear-gradient(72.44deg, #49b8b6 0%, #4958ae 100%);
+  background: linear-gradient(72.44deg, #378D8C 0%, #2B3468 100%);
 }
 .semi-bold{
   font-weight: 500;
@@ -308,10 +310,6 @@ box-shadow: 5px 8px 5px grey;
 }
 .blog-text p {
   font-size: 18px;
-}
-
-.post-preview{
-  
 }
 
 
