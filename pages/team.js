@@ -95,6 +95,9 @@ export default function Team() {
                         
                         </b> 
                     </p>
+                    <a href="https://www.linkedin.com/in/carlos-pozo-gilo-674124254/" className="textGreen">
+                        <GrLinkedin/>
+                    </a>
                 </div>
             </Col>                                                
         </Row>
