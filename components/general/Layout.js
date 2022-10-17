@@ -5,18 +5,18 @@ import {Row, Col} from 'antd'
 export default function Layout(props){
     return(
         <div className='bg-dark'>
-            <nav class="navbar navbar-dark smart-scroll navbar-expand-lg bg-black px-5 w-100 d-flex justify-content-space-between">
-                    <a class="navbar-brand" href="/">
+            <nav className="navbar navbar-dark smart-scroll navbar-expand-lg bg-black px-5 w-100 d-flex justify-content-space-between">
+                    <a className="navbar-brand" href="/">
                     <img src="/assets/logo.png" alt="Nomu Labs" className="d-inline-block align-text-middle logo-md"/>
                     </a>
-                    <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button  className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link text-white" href="/clients"> <b> Clientes </b></a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="/team"> <b>Equipo</b> </a></li>
-                    <li class="nav-item">
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav">
+                    <li className="nav-item"><a className="nav-link text-white" href="/clients"> <b> Clientes </b></a></li>
+                    <li className="nav-item"><a className="nav-link text-white" href="/team"> <b>Equipo</b> </a></li>
+                    <li className="nav-item">
                     <a href="https://calendly.com/nomulabs/30min" className='noLink'>
                                 <button className="gradientButton">Contáctanos</button>
                     </a>
