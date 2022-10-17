@@ -89,8 +89,8 @@ const indicatorStyles =  {
       <div className="container-fluid fullScreen d-flex align-items-center justify-content-center">
         <div>
         <h2 className="text-white text-center mt-3">¡Hablemos!</h2>
-        <h6 className="mt-3 text-white">¡La Web3 es emocionante, ¡no te quedes atrás!</h6>
-          <div className="mt-5">
+        <h6 className="mt-3 text-white text-center">¡La Web3 es emocionante, ¡no te quedes atrás!</h6>
+          <div className="p-5">
           <InlineWidget 
                   className="rounded"
                   pageSettings={{
