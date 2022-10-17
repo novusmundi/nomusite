@@ -37,7 +37,7 @@ const indicatorStyles =  {
             <div className='mx-auto'>
               <img src="/assets/textLogo.png" alt="Nomu Labs" className="logo-xl" />
             <h2 className="mt-3 text-white">Adelantate para destacar.</h2>
-            <h5 className='gradientText text-start'>Web3 Agency</h5>
+            <h5 className='gradientText text-start'>Agencia Web3</h5>
             </div>
           </Col>
           <Col lg={16} className="text-end">
@@ -52,7 +52,7 @@ const indicatorStyles =  {
             <div className=''>
               <h1 className="gradientText"><b>Nomu</b> Labs</h1>
               <p className="mt-3 text-white text-md">
-              Contamos con un equipo y una red de partners que nos permiten proporcionar servicios 360º para cubrir todas las necesidades de tu proyecto.
+              Contamos con un equipo y una red de partners que nos permiten proporcionar un servicio 360º, con el objetivo de  cubrir todas las necesidades de tu proyecto.
               </p>
             </div>
           </Col>
@@ -74,12 +74,12 @@ const indicatorStyles =  {
             <h1 className='text-white'>Prepárate para la <span className="gradientText">tercera fase de internet.</span></h1>
             {/* <a href="!#"><h6 className="text-white mt-3">Saber más &gt;</h6></a> */}
           </Col>
-          <Col lg={12} md={24} className="">
-            <div className='d-none d-lg-block text-end'>
-              <img src="/assets/services.png" alt="" className="img-fluid" />
+          <Col lg={12} md={24} className="text-center">
+            <div className='d-none d-lg-block  mx-auto'>
+              <img src="/assets/services.png" alt="" className="img-fluid mx-auto" />
             </div>
-            <div className="d-lg-none">
-            <img src="/assets/servicesmobile.png" alt="" className="img-fluid" />
+            <div className="d-lg-none mx-auto">
+            <img src="/assets/servicesmobile.png" alt="" className="img-fluid mx-auto" />
             </div>
           </Col>
         </Row>

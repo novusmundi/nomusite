@@ -5,26 +5,38 @@ import {Row, Col} from 'antd'
 export default function Layout(props){
     return(
         <div className='bg-dark'>
-            <nav className="navbar bg-black fixed-top">
-            <div className="container-fluid d-flex justify-content-space-between align-items-center">
-                <a className="navbar-brand" href="#">
+            <nav class="navbar navbar-dark smart-scroll navbar-expand-lg bg-black px-5 w-100 d-flex justify-content-space-between">
+                    <a class="navbar-brand" href="/">
                     <img src="/assets/logo.png" alt="Nomu Labs" className="d-inline-block align-text-middle logo-md"/>
-                </a>
+                    </a>
+                    <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="/clients"> <b> Clientes </b></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/team"> <b>Equipo</b> </a></li>
+                    <li class="nav-item">
+                    <a href="https://calendly.com/nomulabs/30min" className='noLink'>
+                                <button className="gradientButton">Contáctanos</button>
+                    </a>
+                    </li>
 
-                <a href="https://calendly.com/nomulabs/30min" className='noLink'>
-                    <button className="gradientButton">Contactanos</button>
-                </a>
-            </div>
-            </nav>        
+                    </ul>
+                </div>
+                </nav>
             {props.children}
             <div className="bg-black">
             <div className="container-fluid py-3">
-                <Row justify="space-between" align="middle">
+                <Row justify="space-between" align="bottom">
                     <Col>
                         <img src="/assets/logo.png" alt="Nomu Labs" className="d-inline-block align-text-middle logo-md"/>                    
                     </Col>
                     <Col>
                         <a href="mailto:info@nomulabs.com" className="noLink text-white">info@nomulabs.com</a>
+                        <p className="text-center m-0">
+                        Madrid, Spain
+                        </p>
                     </Col>
                     <Col>
                     <Row>

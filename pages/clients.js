@@ -1,28 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import {Row, Col} from 'antd'
-import { Carousel } from 'react-responsive-carousel';
-import {GrNext, GrPrevious} from 'react-icons/gr'
-import {InlineWidget} from 'react-calendly'
 import Layout from '../components/general/Layout'
-export default function Home() {
-  const arrowStyles = {
-    position: 'absolute',
-    zIndex: 2,
-    top: 'calc(50% - 15px)',
-    width: 30,
-    height: 30,
-    cursor: 'pointer',
-};
-
-const indicatorStyles =  {
-    background: 'rgb(170, 166, 166)',
-    width: 40,
-    height: 20,
-    display: 'inline-block',
-    margin: '0 8px',
-};
-
+export default function Clients() {
 
   return (
     <Layout>
