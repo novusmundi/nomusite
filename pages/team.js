@@ -68,23 +68,6 @@ export default function Team() {
             </Col>
             <Col sm={24} md={24} lg={4}>
                 <div className='text-center'>
-                    <img src="/assets/team/camille.png" alt="" className="img-fluid" />
-                    <p className="mt-3">
-                        <b>
-                        Camille Hajjar<br />
-                        <span className="textGreen">
-                            Head of Art dept
-                        </span>
-                        
-                        </b> 
-                    </p>
-                    <a href="https://www.linkedin.com/in/camille-hajjar-b2499815a/" className="textGreen">
-                        <GrLinkedin/>
-                    </a>
-                </div>
-            </Col>
-            <Col sm={24} md={24} lg={4}>
-                <div className='text-center'>
                     <img src="/assets/team/carlos.png" alt="" className="img-fluid" />
                     <p className="mt-3">
                         <b>
