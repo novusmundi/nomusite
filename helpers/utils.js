@@ -1,7 +1,6 @@
 export const language = (defaultLang) => {
-  console.log({ localStorage });
   const set = (lang) =>
-    typeof window !== "undefined" && window.localStorage.set("lang", lang);
+    typeof window !== "undefined" && window.localStorage.setItem("lang", lang);
 
   const get = () => {
     const lang =

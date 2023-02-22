@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import {
   AiFillLinkedin,
@@ -6,12 +7,9 @@ import {
 } from "react-icons/ai";
 import { Row, Col } from "antd";
 import useTranslation from "../../hooks/useTranslation";
-import { language } from "../../helpers/utils";
-import { useEffect } from "react";
 
 export default function Layout(props) {
   const { translations, lang, toggleLang } = useTranslation();
-
   return (
     <div className="bg-dark">
       <nav className="navbar navbar-dark smart-scroll navbar-expand-lg bg-black px-5 py-3 w-100 d-flex justify-content-space-between">
