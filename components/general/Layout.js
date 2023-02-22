@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import {
   AiFillLinkedin,
@@ -7,9 +6,11 @@ import {
 } from "react-icons/ai";
 import { Row, Col } from "antd";
 import useTranslation from "../../hooks/useTranslation";
+import { language } from "../../helpers/utils";
+import { useEffect } from "react";
 
 export default function Layout(props) {
-  const { translations, lang, toggleLang } = useTranslation(["home"]);
+  const { translations, lang, toggleLang } = useTranslation();
 
   return (
     <div className="bg-dark">
@@ -63,7 +64,9 @@ export default function Layout(props) {
               </a>
             </li>
             <li className="mx-md-auto ms-lg-auto me-lg-0">
-              <button className="btn-lang" onClick={toggleLang}>Language: {lang}</button>
+              <button className="btn-lang" onClick={toggleLang}>
+                Language: {lang}
+              </button>
             </li>
           </ul>
         </div>

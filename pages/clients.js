@@ -24,14 +24,14 @@ export default function Clients() {
                 <Col className="text-start" lg={10}>
                   <img src="/assets/nbn23.png" alt="" className="logo-lg" />
                   <h5 className="mt-3">{translations.nbn23.contract}</h5>
-                  <p className="mt-3 text-black">
+                  <div className="mt-3 text-black">
                     <a href="https://nbn23.com" className="gradientText">
                       <b>NBN23</b>
                     </a>
                     {translations.nbn23.text.split("\n\n").map((txt, i) => (
                       <p key={i}>{txt}</p>
                     ))}
-                  </p>
+                  </div>
                 </Col>
                 <Col className="" lg={6}>
                   <img
@@ -49,14 +49,14 @@ export default function Clients() {
                 <Col className="text-start" lg={10}>
                   <img src="/assets/selas.png" alt="" className="logo-lg" />
                   <h5 className="mt-3">{translations.selas.contract}</h5>
-                  <p className="mt-3 text-black">
+                  <div className="mt-3 text-black">
                     <span className="gradientText">
                       <b>Selas Studio</b>
                     </span>
                     {translations.selas.text.split("\n\n").map((txt, i) => (
                       <p key={i}>{txt}</p>
                     ))}
-                  </p>
+                  </div>
                 </Col>
                 <Col className="" lg={6}>
                   <img
@@ -75,14 +75,14 @@ export default function Clients() {
                   <img src="/assets/tgd.svg" alt="" className="logo-md" />
                   <h5 className="mt-3">{translations.dao.contract}</h5>
 
-                  <p className="mt-3 text-black">
+                  <div className="mt-3 text-black">
                     <span className="gradientText">
                       <b>TheGalleryDAO</b>
                     </span>
                     {translations.dao.text.split("\n\n").map((txt, i) => (
                       <p key={i}>{txt}</p>
                     ))}
-                  </p>
+                  </div>
                 </Col>
                 <Col className="" lg={6}>
                   <img
@@ -100,14 +100,14 @@ export default function Clients() {
                 <Col className="text-start" lg={10}>
                   <img src="/assets/amsar.svg" alt="" className="logo-lg" />
                   <h5 className="mt-3">{translations.amsar.contract}</h5>
-                  <p className="mt-3 text-black">
+                  <div className="mt-3 text-black">
                     <span className="gradientText">
                       <b>AMSAR</b>
                     </span>{" "}
                     {translations.amsar.text.split("\n\n").map((txt, i) => (
                       <p key={i}>{txt}</p>
                     ))}
-                  </p>
+                  </div>
                 </Col>
                 <Col className="" lg={6}>
                   <img

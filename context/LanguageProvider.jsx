@@ -10,7 +10,10 @@ export default function LanguageProvider({ children }) {
     setLang((currentLang) => (currentLang === "es" ? "en" : "es"));
   }, []);
 
-  const value = useMemo(() => ({ lang, toggleLang }), [lang, toggleLang]);
+  const value = useMemo(
+    () => ({ lang, toggleLang, setLang }),
+    [lang, toggleLang]
+  );
 
   return <context.Provider value={value}>{children}</context.Provider>;
 }
