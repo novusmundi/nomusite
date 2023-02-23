@@ -5,7 +5,7 @@ export const language = (defaultLang) => {
   const get = () => {
     const lang =
       typeof window !== "undefined"
-        ? window.localStorage.getItem("lang")
+        ? window.localStorage.getItem("lang") || "en"
         : defaultLang;
     set(lang);
     return lang;

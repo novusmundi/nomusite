@@ -5,11 +5,23 @@ import {
   AiFillInstagram,
   AiFillTwitterSquare,
 } from "react-icons/ai";
-import { Row, Col } from "antd";
+import { MdLanguage } from "react-icons/md";
+
+import { Row, Col, Tooltip } from "antd";
 import useTranslation from "../../hooks/useTranslation";
 
 export default function Layout(props) {
   const { translations, lang, toggleLang } = useTranslation();
+  const otherLang = lang === "es" ? "en" : "es";
+
+  const langChange = () => {
+    const themeLang =
+      lang === "es" ? "Cambiar idioma a " : "Change language to ";
+    if (lang === "es" && otherLang === "es") return themeLang + "español";
+    if (lang === "es" && otherLang === "en") return themeLang + "inglés";
+    if (lang === "en" && otherLang === "es") return themeLang + "spanish";
+    if (lang === "en" && otherLang === "en") return themeLang + "english";
+  };
   return (
     <div className="bg-dark">
       <nav className="navbar navbar-dark smart-scroll navbar-expand-lg bg-black px-5 py-3 w-100 d-flex justify-content-space-between">
@@ -61,10 +73,21 @@ export default function Layout(props) {
                 </button>
               </a>
             </li>
-            <li className="mx-md-auto ms-lg-auto me-lg-0">
-              <button className="btn-lang" onClick={toggleLang}>
-                Language: {lang}
-              </button>
+            <li className="mx-auto ms-lg-auto me-lg-0">
+              <Tooltip
+                title={langChange()}
+                placement="left"
+                aria-label={langChange()}
+                color="#212529"
+              >
+                <button className="btn-lang" onClick={toggleLang}>
+                  <MdLanguage
+                    className="me-2 text-white"
+                    style={{ fontSize: "18px" }}
+                  />
+                  {otherLang.toUpperCase()}
+                </button>
+              </Tooltip>
             </li>
           </ul>
         </div>

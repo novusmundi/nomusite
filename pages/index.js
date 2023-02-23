@@ -19,28 +19,33 @@ export default function Home() {
       </Head>
       <div
         id="header"
-        className="bg-black fullScreen d-flex justify-content-center align-items-center"
+        className="mt-lg-0 bg-black fullScreen d-flex justify-content-center align-items-center"
+        style={{ marginTop: "5rem" }}
       >
         <Row
           className="container-fluid w-100 h-100"
           align="middle"
           justify="space-between"
         >
-          <Col lg={8} className="d-flex alig-content-center">
-            <div className="mx-auto">
+          <Col sm={24} lg={8} className="d-flex alig-content-center">
+            <div className="mx-auto text-center text-lg-start">
               <img
                 src="/assets/textLogo.png"
                 alt="Nomu Labs"
-                className="logo-xl"
+                className="img-fluid -logo-xl px-5 px-lg-0"
               />
               <h2 className="mt-3 text-white">{translations.title}</h2>
-              <h5 className="gradientText text-start">
+              <h5 className="gradientText text-center text-lg-start">
                 {translations.subtitle}
               </h5>
             </div>
           </Col>
-          <Col lg={16} className="text-end">
-            <img src="/assets/banner.png" alt="" className="img-fluid" />
+          <Col lg={16} sm={14} className="text-end mx-auto ">
+            <img
+              src="/assets/banner.png"
+              alt=""
+              className="img-fluid"
+            />
           </Col>
         </Row>
       </div>
