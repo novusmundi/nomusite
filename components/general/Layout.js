@@ -25,7 +25,7 @@ export default function Layout(props) {
   };
   return (
     <div className="bg-dark">
-      <nav className="navbar navbar-dark smart-scroll navbar-expand-lg bg-black px-5 pb-3 pt-4 w-100 d-flex justify-content-space-between">
+      <nav className="navbar navbar-dark navbar-in-top navbar-expand-lg bg-black px-5 pb-3 pt-4 w-100 d-flex justify-content-space-between">
         <Link className="navbar-brand" href="/">
           <img
             src="/assets/logo.png"

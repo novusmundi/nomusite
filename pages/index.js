@@ -7,8 +7,8 @@ import useMediaQuery from "../hooks/useMediaQuery";
 
 export default function Home() {
   const { translations } = useTranslation();
-  const isSm = useMediaQuery("(max-width: 768px)");
   const isLg = useMediaQuery("(max-width: 1040px)");
+  
   return (
     <Layout>
       <Head>
