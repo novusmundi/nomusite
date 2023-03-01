@@ -14,7 +14,7 @@ export default function Layout(props) {
   const isSm = useMediaQuery("(max-width: 768px)");
   const { translations, lang, toggleLang } = useTranslation();
   const otherLang = lang === "es" ? "en" : "es";
-
+  console.log(isSm ? "block" : "inline-block");
   const langChange = () => {
     const themeLang =
       lang === "es" ? "Cambiar idioma a " : "Change language to ";
@@ -25,7 +25,7 @@ export default function Layout(props) {
   };
   return (
     <div className="bg-dark">
-      <nav className="navbar navbar-dark navbar-in-top navbar-expand-lg bg-black px-5 pb-3 pt-4 w-100 d-flex justify-content-space-between">
+      <nav className="navbar navbar-dark fixed-top navbar-expand-lg bg-black px-5 pb-3 pt-4 w-100 d-flex justify-content-space-between">
         <Link className="navbar-brand" href="/">
           <img
             src="/assets/logo.png"

@@ -228,19 +228,9 @@ body {
   background: linear-gradient(72.44deg, #378d8c 0%, #2b3468 100%);
 }
 
-
 .semi-bold {
   font-weight: 500;
 }
-
-.navbar-in-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
 
 .scrolled-down {
   transform: translateY(-100%);

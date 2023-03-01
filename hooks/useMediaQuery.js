@@ -1,32 +1,19 @@
 import { useEffect, useState } from "react";
 
-function useMediaQuery(query) {
-  const getMatches = (query) => {
-    // Prevents SSR issues
-    if (typeof window !== "undefined") {
-      return window.matchMedia(query).matches;
-    }
-    return false;
-  };
-
-  const [matches, setMatches] = useState(getMatches(query));
-
-  function handleChange() {
-    setMatches(getMatches(query));
-  }
-
+export default function useMediaQuery(query) {
+  const [isMobile, setMobile] = useState(false);
   useEffect(() => {
-    const matchMedia = window.matchMedia(query);
-    handleChange();
-    matchMedia.addEventListener("change", handleChange);
+    function checkMedia() {
+      const match = window.matchMedia(`(${query})`);
+      setMobile(match.matches);
+    }
+
+    checkMedia();
+    window.addEventListener("resize", checkMedia);
 
     return () => {
-      matchMedia.removeEventListener("change", handleChange);
+      window.removeEventListener("resize", checkMedia);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query]);
-
-  return matches;
+  return isMobile;
 }
-
-export default useMediaQuery;
