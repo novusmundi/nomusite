@@ -3,10 +3,12 @@ import { Row, Col } from "antd";
 import { InlineWidget } from "react-calendly";
 import Layout from "../components/general/Layout";
 import useTranslation from "../hooks/useTranslation";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 export default function Home() {
   const { translations } = useTranslation();
-
+  const isSm = useMediaQuery("(max-width: 768px)");
+  const isLg = useMediaQuery("(max-width: 1040px)");
   return (
     <Layout>
       <Head>
@@ -20,7 +22,6 @@ export default function Home() {
       <div
         id="header"
         className="mt-lg-0 bg-black fullScreen d-flex justify-content-center align-items-center"
-        style={{ marginTop: "5rem" }}
       >
         <Row
           className="container-fluid w-100 h-100"
@@ -32,7 +33,7 @@ export default function Home() {
               <img
                 src="/assets/textLogo.png"
                 alt="Nomu Labs"
-                className="img-fluid -logo-xl px-5 px-lg-0"
+                className="img-fluid px-5 px-lg-0"
               />
               <h2 className="mt-3 text-white">{translations.title}</h2>
               <h5 className="gradientText text-center text-lg-start">
@@ -41,11 +42,7 @@ export default function Home() {
             </div>
           </Col>
           <Col lg={16} sm={14} className="text-end mx-auto ">
-            <img
-              src="/assets/banner.png"
-              alt=""
-              className="img-fluid"
-            />
+            <img src="/assets/banner.png" alt="" className="img-fluid" />
           </Col>
         </Row>
       </div>
@@ -112,27 +109,28 @@ export default function Home() {
           </Row>
         </div>
       </div>
-      <div className="container-fluid fullScreen d-flex align-items-center justify-content-center">
-        <div>
-          <h2 className="text-white text-center mt-3">
-            {translations.letsTalk}
-          </h2>
-          <h6 className="mt-3 text-white text-center">
-            {translations.letsTaslkDescription}
-          </h6>
-          <div className="p-5">
-            <InlineWidget
-              className="rounded"
-              pageSettings={{
-                backgroundColor: "ffffff",
-                hideEventTypeDetails: false,
-                hideLandingPageDetails: true,
-                primaryColor: "378D8C",
-                textColor: "000000",
-              }}
-              url="https://calendly.com/nomulabs/30min"
-            />
-          </div>
+
+      <div className="container-fluid w-100 mt-5 pt-4">
+        <h2 className="text-white text-center mt-3">{translations.letsTalk}</h2>
+        <h6 className="mt-3 text-white text-center">
+          {translations.letsTaslkDescription}
+        </h6>
+        <div className="my-4">
+          <InlineWidget
+            className="meeting"
+            pageSettings={{
+              backgroundColor: "ffffff",
+              hideEventTypeDetails: false,
+              hideLandingPageDetails: true,
+              primaryColor: "378D8C",
+              textColor: "000000",
+            }}
+            styles={{
+              height: isLg ? "980px" : "700px",
+              overflow: "hidden",
+            }}
+            url="https://calendly.com/nomulabs/30min"
+          />
         </div>
       </div>
     </Layout>

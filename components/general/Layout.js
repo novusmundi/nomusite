@@ -6,11 +6,12 @@ import {
   AiFillTwitterSquare,
 } from "react-icons/ai";
 import { MdLanguage } from "react-icons/md";
-
 import { Row, Col, Tooltip } from "antd";
 import useTranslation from "../../hooks/useTranslation";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 export default function Layout(props) {
+  const isSm = useMediaQuery("(max-width: 768px)");
   const { translations, lang, toggleLang } = useTranslation();
   const otherLang = lang === "es" ? "en" : "es";
 
@@ -24,7 +25,7 @@ export default function Layout(props) {
   };
   return (
     <div className="bg-dark">
-      <nav className="navbar navbar-dark smart-scroll navbar-expand-lg bg-black px-5 py-3 w-100 d-flex justify-content-space-between">
+      <nav className="navbar navbar-dark smart-scroll navbar-expand-lg bg-black px-5 pb-3 pt-4 w-100 d-flex justify-content-space-between">
         <Link className="navbar-brand" href="/">
           <img
             src="/assets/logo.png"
@@ -95,56 +96,60 @@ export default function Layout(props) {
 
       {props.children}
 
-      <div className="bg-black">
-        <div className="container-fluid py-3">
-          <Row justify="space-between" align="bottom">
-            <Col>
-              <img
-                src="/assets/logo.png"
-                alt="Nomu Labs"
-                className="d-inline-block align-text-middle logo-md"
-              />
-            </Col>
-            <Col>
-              <a href="mailto:info@nomulabs.com" className="noLink text-white">
-                info@nomulabs.com
+      <footer className="bg-black px-5 py-4">
+        <Row justify={isSm ? "center" : "space-between"} align="center">
+          <Col xs={24} sm={24} md={8}>
+            <img
+              src="/assets/logo.png"
+              alt="Nomu Labs"
+              className="align-text-middle logo-md"
+              style={{
+                display: isSm ? "block" : "inline-block",
+                margin: isSm ? "0 auto 1.2rem auto" : "0",
+              }}
+            />
+          </Col>
+
+          <Col xs={24} sm={24} md={8} className="text-center">
+            <a href="mailto:info@nomulabs.com" className="noLink text-white">
+              info@nomulabs.com
+            </a>
+            <p className="m-1">Madrid, Spain</p>
+          </Col>
+
+          <Col
+            xs={24}
+            sm={24}
+            md={8}
+            className="w-100"
+            style={{
+              display: "flex",
+              justifyContent: isSm ? "center" : "flex-end",
+            }}
+          >
+            <div className="d-inline-flex align-items-center">
+              <a
+                href="https://www.linkedin.com/company/nomulabs/"
+                className="noLink "
+              >
+                <h2 className="text-white">
+                  <AiFillLinkedin />
+                </h2>
               </a>
-              <p className="text-center m-0">Madrid, Spain</p>
-            </Col>
-            <Col>
-              <Row>
-                <Col>
-                  <a
-                    href="https://www.linkedin.com/company/nomulabs/"
-                    className="noLink "
-                  >
-                    <h2 className="text-white">
-                      <AiFillLinkedin />
-                    </h2>
-                  </a>
-                </Col>
-                <Col>
-                  <a
-                    href="https://www.instagram.com/nomulabs/"
-                    className="noLink "
-                  >
-                    <h2 className="text-white">
-                      <AiFillInstagram />
-                    </h2>
-                  </a>
-                </Col>
-                <Col>
-                  <a href="https://twitter.com/nomulabs/" className="noLink ">
-                    <h2 className="text-white">
-                      <AiFillTwitterSquare />
-                    </h2>
-                  </a>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </div>
-      </div>
+              <a href="https://www.instagram.com/nomulabs/" className="noLink ">
+                <h2 className="text-white">
+                  <AiFillInstagram />
+                </h2>
+              </a>
+              <a href="https://twitter.com/nomulabs/" className="noLink ">
+                <h2 className="text-white">
+                  <AiFillTwitterSquare />
+                </h2>
+              </a>
+            </div>
+          </Col>
+        </Row>
+      </footer>
     </div>
   );
 }
